@@ -12,13 +12,7 @@ body {
   box-sizing: inherit;
 }
 
-h1 {
-  font-family: Dosis, sans-serif;
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-a {
+.link-card {
   display: block;
   background-color: #dcd4cd;
   border: solid #cabdb2;
@@ -29,12 +23,10 @@ a {
   color: #785439;
 }
 
-hr {
-  border-color: #cabdb2;
-}
-
-.one {
-  margin: 0 0 1rem;
+.link-card h2 {
+  font-family: Dosis, sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 dl {
@@ -64,7 +56,7 @@ p {
   font-size: 1rem;
 }
 
-.link-card {
+.btn {
   display: inline-block;
   font-family: Dosis, sans-serif;
   font-weight: bold;
@@ -75,19 +67,20 @@ p {
   border: solid #785439;
   border-width: 2px;
   border-radius: 8px;
+  margin: .5rem;
 }
 
 footer {
   text-align: center;
 }
 
-a:hover {
+.link-card:hover {
   color: #512200;
   background-color: #cabdb2;
   border: solid #512200;
 }
 
-a:hover .link-card {
+.link-card:hover .btn {
   background-color: #512200;
   border: solid #512200;
   border-width: 2px;
@@ -96,4 +89,8 @@ a:hover .link-card {
 
 a:hover hr {
   border-color: #512200;
+}
+
+.link:hover dl {
+  color: #512200;
 }
